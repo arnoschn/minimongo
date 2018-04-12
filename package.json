@@ -1,5 +1,5 @@
 {
-  "name": "minimongo",
+  "name": "@arnoschn/minimongo",
   "version": "5.0.1",
   "description": "Client-side mongo database with server sync over http",
   "main": "index.js",
