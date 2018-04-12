@@ -4,11 +4,12 @@
   "description": "Client-side mongo database with server sync over http",
   "main": "index.js",
   "scripts": {
-    "test": "testem ci"
+    "test": "testem ci",
+    "build": "babel  --presets=es2015,stage-0 --plugins=syntax-async-functions,transform-runtime -d lib/ src/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mWater/minimongo.git"
+    "url": "https://github.com/arnoschn/minimongo.git"
   },
   "keywords": [
     "mongodb",
@@ -25,17 +26,8 @@
   },
   "homepage": "https://github.com/mWater/minimongo",
   "devDependencies": {
-    "browserify": "^3.29.1",
     "chai": "~1.9.0",
-    "coffee-loader": "^0.9.0",
-    "coffeeify": "~0.6.0",
-    "coffeescript": "^1.12.7",
     "glob": "^3.2.9",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-coffee": "^1.4.2",
-    "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^0.3.1",
-    "gulp-util": "^2.2.14",
     "karma": "^0.13.10",
     "karma-browserify": "^4.3.0",
     "karma-chrome-launcher": "^0.2.0",
@@ -46,15 +38,12 @@
     "sinon": "^3.2.1",
     "testem": "~0.6.7",
     "vinyl-buffer": "0.0.0",
-    "vinyl-source-stream": "^0.1.1",
-    "webpack": "^4.5.0",
-    "webpack-dev-server": "^3.1.3"
+    "vinyl-source-stream": "^0.1.1"
   },
   "private": true,
   "dependencies": {
     "async": "^1.4.2",
     "bowser": "^0.7.1",
-    "gulp-cli": "^4.0.0",
     "idb-wrapper": "^1.4.1",
     "jquery": "^3.3.1",
     "js-sha1": "^0.6.0",
