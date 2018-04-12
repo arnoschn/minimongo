@@ -20,7 +20,7 @@ licenses, included below:
 
 */
 
-LocalCollection = {};
+let LocalCollection = {};
 EJSON = require("./EJSON");
 var _ = require('lodash');
 
